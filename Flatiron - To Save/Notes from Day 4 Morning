@@ -1,0 +1,35 @@
+config.color = true
+change seed to default (from random)
+
+Entering variables into strings it's perferred to use string interpolation "Hello, #{name}!" instead of concatenation "Hello, " + name + "!"
+
+If method ends in ? the method should return true/false
+
+Include all additional files for the test in spec_helper.rb - the program_name_spec.rb file should only require the spec_helper file
+
+result.empty? ? nil : result
+
+if result.empty?
+  nil
+else
+  result
+end
+
+
+case x
+when 1,3 #(when x == 1 || x ==3 )
+
+variable.each do |newvar|
+  puts "Blah blah blah"
+end
+
+dot notation left = receiver / right = message
+
+try not to make any chains longer than 3
+
+greeting.reverse.upcase.capitalize.downcase.reverse
+
+each returns the array you passed in
+
+
+

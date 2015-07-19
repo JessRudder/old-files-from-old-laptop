@@ -1,0 +1,13 @@
+Active Record has validations built in and you can use them to make sure you get the data you want or NO SAVING EVER!
+
+validates :name, :presence => true
+
+before_create hook fires once during the entire life of the AR object.  before_save hook happens before each time it's saved.
+
+AR provides you with many opportunities to hook into moments in the lifecyle of db records (look them up!)
+
+Read strong_parameters documentation to learn how it works.
+
+DJANGO == RAILS for Python!
+
+Make methods in controllers private to make sure tehy can't be routed to/accessed from outside the inner workings of the page

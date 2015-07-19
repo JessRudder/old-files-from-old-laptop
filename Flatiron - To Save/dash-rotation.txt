@@ -1,0 +1,38 @@
+######## Does Rotate Pages - Not Sure How to Get the Material We Want on Each Page ################
+
+    <script type="text/javascript" charset="utf-8">
+    var sites = [
+      "/week",
+      "/day",
+      "/semester",
+      "/"
+    ];
+    var currentSite = sites.length;
+
+    $(document).ready(function () {
+      var $iframe = $("iframe").attr("src","http://www.google.com");
+      setInterval(function() {
+        (currentSite == 0) ? currentSite = sites.length - 1 : currentSite = currentSite -1;
+        $iframe.attr("src",sites[currentSite]);
+      }, 20000);
+    });
+  </script>  
+  <style type="text/css" media="screen">
+    iframe {
+      height: 100%;
+      width: 100%;
+      border: none;
+    }
+  </style>
+
+</head>
+<body>
+
+  <iframe>
+  <%= yield %>
+  </iframe>
+
+</body>
+</html>
+
+#################

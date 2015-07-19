@@ -1,0 +1,22 @@
+gem install rails
+rails new "app name"
+config.ru is first file run because it's a rackup app
+
+When you're in a rails directory, typing rails no longer generates new apps.  Now gives you list of commands you can use
+
+
+Rails routes
+get('hello_world' => 'application#hello_world')
+
+There's a URL 'hello_world'
+hello_world is a method that contains the actiosn you want
+
+Command T for searching massive quantities of files
+
+####### Generates a form using Rails! #######
+<%= form_tag(posts_path) do %>
+<% end %>
+##############################################
+
+
+

@@ -1,0 +1,37 @@
+Need to define the 'events' that you want to report on:
+1) button clicks
+2) add to cart
+3) paying
+
+Adapter pattern
+- we send data to segement.io
+- segment.io replicates it across your chosen services
+
+Track session ids because they're always unique
+  - no other user on your website will ever have that unique session id
+
+Track on front end is much more powerful because you have more access to user data (browser, etc)
+
+Have a helper delegate to a partial
+ - Don't want any HTML in helpers (can be done but no reason to)
+
+Have a view delegate content to be dropped into a partial (Avi's not sure he likes how he's using it right now)
+ - sublayouts/content for blocks
+ - this is done a lot for things like telling the footer which page you're on, 
+ - if you call it with a block, Rails assumes you're defining what is going to be called later, if you call it without a block Rails assumes you're calling what has been defined
+
+Incognito window will give you a new session in rails every time
+
+Don't redirect to a thank you page - render it.  If someone refreshes the page, it can mess up your analytics.
+
+
+Testing tracking with RSPEC is difficult
+
+View object - concept in model view controllers
+ - presenter is alternate name
+
+Blog post on Turing Complete Magic the Gathering computer
+
+Chemistry App - Using Classes and RSPEC to model basic chemistry
+
+

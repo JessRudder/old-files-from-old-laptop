@@ -1,0 +1,54 @@
+Reasons Everyone Should Learn to Code
+
+There are jobs that pay if you know how to code
+ - other professions have a higher barrier to entry (required college, expensive exams, etc)
+ - code only requires that you can show you can code
+
+Know enough to successfully communicate in an increasingly tech driven world.
+
+Many non-engineering jobs require knowledge of code (from tagging and analytics in marketing to providing input on your website in ecommerce)
+
+Computational thinking helps people learn how to think abstractly and pull apart a problem into smaller pieces. One concrete way to learn aspects of those skills is programming
+
+A lot of coding is more simple than you think.  It's not always about complicated algorithms and advanced lambda calculus (usually).  It's more important to be able to break a problem into smaller parts and solve the simpler problems.  Then you can stack simple solutions one on top of another until you've solved the gigantic problem.
+
+Full of amazing people with diverse interests and talents.
+
+It might not be for you, but you won't know unless you give it a try.  And make sure you get some variety in there.  I thought I hated jalapenos but it turns out I hate the pickled jalapenos available in jars in the midwest.  I absolutely love fresh jalapenos!
+
+Programming is thinking about thinking
+
+Code is beautiful!
+
+-----------------------
+Since you're watching a video called "should I learn to code?" chances are that question is on your mind.  Sorry, but I can't answer that for you.  I can tell you why I chose to learn to code though - and maybe that will be helpful.
+
+
+
+
+If you are interested in coding, go for it!  Lines of code are free and you can write as many as you'd like.  There are plenty of no-cost and low-cost resources and programs that can help guide your learning as well.
+
+If it turns out it's not for you, that's o.k.  You spent a little bit of time learning something new and you'll be better prepared to interact with the technology around you.
+
+But, if you're like me and you discover that 
+
+--------------
+Common Misconceptions About Learning to Code
+1) You have to be a math genius
+
+2) The people are weird.  Sort of true, but they are wierd in the most fabulous of ways.  From the guy that was building apps at 15 when you were busy playing video games to the 
+
+3) You should only learn to code if you want to become a developer
+
+4) You have to buy a lot of expensive equipment and programs to start
+
+5) It's only relevant to people in tech oriented fields.  But it's actually important in fields from marketing to farming.
+
+6) Girls don't learn to program.  It's true that the numbers are low.  According to the Beaurau of Labor Statistics only 18% of the CS degrees awarded last year went to women.  So what?  If you want to learn to code, learn to code.  
+
+7) All the cool things have already been built.
+
+8) Code is ugly - ugly code is ugly.  Code done right is beautiful!  It’s a story you’re telling about how the program should work.  It’s art that can actually make other art!  How meta is that?!?  
+
+9) Coding is a lone wolf kind of activity.  The best coding is done in groups.  Whether its 1 on 1 pair programming or working in a team, people who code together write better code.
+

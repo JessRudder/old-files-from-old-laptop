@@ -1,0 +1,80 @@
+Managing Gem Dependencies
+bundle init
+  - sets project up to be bundler compatible
+
+gem 'activerecord' (this just says you need the gem)
+gem 'activerecord', '4.1' (this specifies the version you want)
+
+Semantic Versioning 1.2.3
+
+1) Major number (major release - allowed to be incompatible with lower versions)
+2) Minor release (updates current version - has to be compatible with same version)
+3) Patch (backwards compatible bug fixes)
+
+#######Place in environment.rb file######
+ENV["APP_ENV"] ||= "development"
+
+require 'bundler/setup'
+Bundler.require
+
+require 'active_record' #this can't automatically load from the Bundler because the library and gem names are different
+#######################################
+
+ActiveRecord::Base.establish_connection(
+  :adapter => 'sqlite3'
+
+  :database => "db/student-#{ENV["APP_ENV"]}.db"
+)
+
+ActiveRecord is database agnostic library (as long as you're using a relational database)
+
+ActiveRecord Migration is library AR gives you to run SQL commands.
+
+migration files go in the db/migration folder
+
+##########  01_create_students.rb (must define class called CreateStudents)  #######
+class CreateStudents < ActiveRecord::Migration
+end
+################
+
+File name has to correspond to the class name - replace underscores in file name  with camelcase in Class name
+
+##########  01_create_students.rb #########
+class CreateStudents < ActiveRecord::Migration
+  def up #how to add info to table
+    #data for creating a table
+  end
+
+  def down #how to undo the update on the up method
+    #data for removing a table
+  end
+end
+################
+
+Rake is a task oriented DSL
+
+-ruby used for writing simple tasks
+
+If you want a rake task you make a Rakefile (just like with the gemfile)
+
+rake -T (shows all the rake tasks that can be run)
+
+######### rakefile #########
+desc "A Sample Rake Task"
+task :sample do
+  puts "I am a sample task"
+  end
+
+desc "Load your application in a console"
+task :console do
+  require_relative './config/environment'
+end
+
+namespace :db do
+  desc "Migrate the DB"
+  task :migrate do
+   blah blah blah
+  end
+end
+:namespace (allows us to group tasks together so the namespace shows up before the task in a rake list)
+

@@ -1,0 +1,16 @@
+Does anyone here like repeating themselves?
+
+I said, does anyone here like repeating themselves?
+
+Just kidding.  Of course not.  In pretty much anything but learning, repetition is a time suck.  We all have better things to do than retype or even cut/paste/and edit the same lines of code over and over again. [Choppie in a frame here?]
+
+Imagine you've been hired to write a program to help your local nature reserve keep track of their operations.  They've got a lot of different things to keep track of - the people that work there, the vehicles they use and the hyenas they take care of.
+
+Each of these has it's own very different class in your program, but they share some functionality - like needing to be counted.  That code can be pulled into a module that's extended to the base class and....viola - nice, DRY code.
+
+But when it's time to test that code, what do you do?  You could test it for just one class and assume that if it works there it works everywhere.  Or you could write the same test for every class.  Yuck!  Wouldn't it be awesome if there were a way to keep your test suite as DRY as your actual code?
+
+There is!
+
+Implicit Subjects and Shared Examples (RSPEC) [Nice Place for a Title Slide]
+

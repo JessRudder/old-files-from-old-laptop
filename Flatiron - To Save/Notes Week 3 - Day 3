@@ -1,0 +1,17 @@
+ORM: Active Record
+
+Map rows in a database to instances of a class
+
+model mirrors tables it stores data in
+  - model is singular and lowercase (post)
+  - table is plural (posts)
+
+Heredoc  <<-ARBITRARY
+blah blah
+blah
+blah blah blah
+ARBITRARY
+
+There's a sqlite ruby gem!
+
+If you're interpolating values directly into sql statement you're doing it wrong.  Let the driver do the sanitizing first and then add in the variables (this is where you have the ? in the SQL statement)

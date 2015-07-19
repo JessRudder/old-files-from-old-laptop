@@ -1,0 +1,53 @@
+Lecture Notes Week 2 - Day 1
+
+#!/usr/bin/env ruby  <--- line of code that tells bash to open the file using the ruby interpreter.
+
+Focus on creating structure then solving the smallest problem possible.
+
+Nokogiri?
+ - How do we get it working on our system?
+ - Make sure to require the nokogiri gem
+ - CSS selectors will be super key here
+ - Works for scraping HTML -> You can then use Ruby to parse/mutate the output as you see fit
+
+bug in the find documentation for Ruby (has detect as an example) <- could update documentation
+
+when you want to chain blocks together you should use {} instead of do...end
+
+Refer to Github Ruby style guide for style questions.
+
+select, reject & collect => family of filters (return a modified array)
+
+all?  The second one element makes the block evaluate to false, the whole thing returns false.
+any?  If just one element in the block has evaluates to true, the whole thing returns true.
+none?  Only returns true if every single iteration of the block returns false.
+
+is_a? -> checks the type of an element
+
+### Check This Out - See if Works
+#  def my_none?(array)          #
+#    answer = true              #
+#    array.each do |i|          #
+#      if yield(i)              #
+#        return false           #
+#      end                      #
+#    end                        #
+#  end                          #
+#                               #
+#  my_none?([1,2,3]) do |i|     #
+#    i.even?                    #
+#  end                          #
+#################################
+
+pry is a ruby gem
+ - a REPL replacement (replaces REPLs like IRB)
+ - drop into pry by 'binding.pry' <- put this in your code where you want to 'drop in'
+        - 'c' tells pry to continue until it gets to the next loop (maybe exit b/c 'c'/'next' didn't seem to work)
+
+system('ls') - in IRB (ruby) it will send the command to bash and print the results
+
+Great tool for finding helpful gems - https://www.ruby-toolbox.com/search?utf8=✓&q=date+time
+
+When you need to know what data is on different levels of a nested structure, you should use hashes instead of arrays.
+
+

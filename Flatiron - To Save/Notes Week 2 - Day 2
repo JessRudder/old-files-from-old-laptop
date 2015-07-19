@@ -1,0 +1,59 @@
+"The best way to predict the future is to invent it" - Alan Key
+
+One def of object = all data and all knowledge? needed to do the job
+
+Classes contain the blueprints for a new instance as well as the ability to create the new instance (Dog.new)
+
+Pay attention to the scope of your methods.  Some are meant to be called on the class (Dog.new) whie others are called on the instance (fido.bark)
+
+###These are all equivalent and valid ###
+fido.name=("Fido")
+fido.name= "Fido"
+fido.name = "Fido"
+
+###This is doable, but very disliked##
+fido.instance_variable_get(:@name)
+
+####################
+class Dog
+  attr_accessor :name, :breed, :age, :color
+
+  def bark
+    puts "Woof! I'm #{name.capitalize.reverse.swapcase}
+  end
+
+end
+#####################
+
+in bark method above name.capitalize.reverse.swapcase works because Ruby first looks to see if name is a variable (here it isn't one in the method) then checks to see if it can be a method on the instance -> above is equivalent to self.name.capitalize.reverse.swapcase
+
+Use the reader and writer methods you write.  Don't manually 
+
+# The initialize method runs when Class.new is run
+def initialize
+  #code goes here
+end
+
+
+initialize is one place you can use instance variable (@variable)  If you've already built an attr_accessor for the variable, standard is to use self.variable (though @variable would work)
+
+I_AM_A_CONSTANT = constant variable
+Constants are accessible anywhere in the scope in which they were defined
+
+
+####### The :: allows something outside the scope to access a variable inside the scope of something else 
+
+class Phrases
+  GREETING = "Hello Class!"
+end
+
+def say_hello
+  puts Phrases::GREETING
+end
+
+You should not reassign the value of a constant (some Rubies will give you errors - others will give you warnings - just don't do it.)
+
+In class method self refers to the class.
+In instance method self refers to the instane.
+
+

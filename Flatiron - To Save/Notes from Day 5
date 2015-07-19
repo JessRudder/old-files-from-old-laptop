@@ -1,0 +1,51 @@
+When you see:
+
+  new_array = []
+
+  original_array.each do |member|
+    empty_array << member
+  end
+
+  return new_array
+
+You should probably be using
+
+original_array.collect
+
+array.shift returns the 0th item and removes it from the array
+
+<< and .push are aliases of the same method.  << is concerned to be favorable (looks cleaner)
+
+in irb _ is the last return value (in case you make a mistake and forgot to grab that return in a variable!)
+
+You Need to Know:
+pop, shift and push #You will use them every day!
+
+.permutation (returns all the permutations of an array)  # Could be useful for the flight planning project!
+
+normalizing and de-nomalizing data is something you work with a lot as a programmer (look up common methods used to do this)!
+
+Keys and Values in a hash do not exist without each other.
+
+"using a hash rocket is so much fun"
+
+items can be chained onto the end of a method
+
+def some_method()
+  code
+  code
+  code
+end.compact
+
+detect returns first element for which the block returns true.
+
+Select returns all elements for which the block returns true.
+
+{} if block will fit on one line or if you're going to chain something on the end of the block
+
+do...end if block will be multi-line
+
+
+
+
+

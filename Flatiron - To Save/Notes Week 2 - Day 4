@@ -1,0 +1,97 @@
+chmod +x ./bin/cli (told system the file was safe to run)
+
+bin - holds 1 file that tells the program to run
+
+lib - holds 2 files one to scrape, one to make student class
+
+spec - studentspec.rb and scraper.rb to test the two files.
+
+#!/usr/bin/env ruby  #tells system to run file with Ruby
+
+config directory - environment.rb contains all the file requirements (so other files can just require this one single file)
+
+spec helper only runs files that end in _rspec
+
+private methods can only be called implicitly (not with the dot notation) - effectively means it can only be called within the class
+
+Creates a console that loads your program files so you can run through and test it with a single load command
+########
+#!/usr/bin/env ruby
+
+require 'pry'
+require_relative '../config/environment'
+
+Pry.start
+########
+
+@name ||= doc.search('div.test a')
+
+in Nokogiri *= is a selector that says it should contain that text (but doesn't have to match exactly)
+
+Pseudo selector - selecting on state of property, not property itself
+
+Chain on to other lines by either a dangling comma --> ,
+OR by a dangling period --> .
+Ruby will read both lines as if they need to continue on the next line
+
+["sixteen", "one", "four", "eight"].     #sorts this hash by the length of each word
+  sort_by { |word| word.length}
+
+Inheritance
+
+#######
+class Artist
+  attr_accessor :name, :medium
+end
+
+class Musician < Artist
+  def initialize
+    @medium = "Music"
+  end
+end
+##############
+
+In general inheritance is not preferred in Ruby.
+  - You can only inherit from a single class
+  - If you want to have classes inherit from multiple class you have to chain it by having classes inherit from each other (then having another class inherit from one of them)
+
+Better to use....
+
+MODULES!
+
+#######
+module Rankable  # convention is to name the module based on functionality
+  def top_5
+    @@all.sort_by{|o| o.rank}
+  end
+end
+
+class Artist
+  extend Rankable  #adds methods in Rankable module to the Artist class lookup chain
+  include Rankable #
+end
+
+Artist.top_5
+###########
+
+Module is wrapper around behavior
+
+extend means all artists in general (class Artist) get the module methods (creates instance methods of the module )
+include means specific instances of the class get the module methods (creates class methods from module)
+
+############
+module Rankable
+  module ClassMethods
+    def top_5
+      @@all.sort_by{|o| o.rank}
+    end
+  end
+
+  module InstanceMethods
+  end
+end
+
+with above code , extend Rankable::ClassMethods or extend Rankable::InstanceMethods (you know which ones are supposed to go where)
+
+The classmethods and instancemethods sub-modules should be created immediately when you open a module
+

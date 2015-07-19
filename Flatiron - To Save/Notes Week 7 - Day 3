@@ -1,0 +1,93 @@
+Javascript!
+
+var name = "steven";
+var secret = 42;
+
+name = "Blake";  <--because it's already assigned it's just reassignment, otherwise it would be a global variable - DO NOT MAKE GLOBAL VARIABLES!
+
+Have to explicitly return a value
+
+Ruby hashes = Javascript objects
+key/value = property/value
+
+this in javascript is similar to self in ruby objects:
+
+###############Javascript#############
+var steven = {
+  name: "Steven",
+  introduce: function(){
+    return "Hi! I'm " + this.name;
+  }
+}
+
+steven.introduce();
+#######################################
+
+Functions are the work horse of javascript (similar to what you'd use classes for in Ruby)
+
+Prototypes store the instance variables (the instances themselves don't).
+
+var taco = function(){};  <---anon function
+function taco(){}
+
+Run tests by opening spec_runner in the browser
+
+multi line assignment
+
+var a = 30, b = 20, c = 30;
+
+const STAY_THE_SAME = 1; <----can't be changed
+
+typeof hamburger; <----will tell you what type of variable hamburger is
+
+All data coming in from a form is a string.
+  parseInt() <----will turn it from string to integer if it can, otherwise NaN
+
+  parseFloat() <----will convert to a float
+
+Closest equivalent to gets/puts
+
+alert, confirm, prompt, log
+
+Always use === because == doesn't account for type:
+"1" == 1  #=> true
+"1" === 1 #=> false
+
+For not equals use !== (strict not equals)
+
+&& and, || or, ! not
+
+x &= y   x = x & y
+x |= y   x = x | y
+
+elsif is else if in javascript
+
+switch (fruitType) {
+  case "Oranges":
+    stuff to do;
+    break;
+  case "Apples":
+    stuff to do;
+    break;
+  default:
+    console.log (Sorry, we are out of" + fruitType);
+}
+
+document.getElementsByTagName("p") <--javascript
+$("p") <-- jQuery
+
+document.getElementById("foo").innerHTML("hello world")
+
+Each branch on DOM is called a node
+ - you can ask for the node type of the thing you've selected
+ - elements have node type 1
+ - attributes 2
+ - something else 3
+
+document.getElementById("foo").nodeType; #=> 1
+document.getElementById("foo").nodeName; #=> div
+
+Moving down the DOM is capture phase, moving up from Target to Root is the bubbling phase
+  - Root is brain, Target is finger, hit with hammer and signal bubbles back up
+
+

@@ -1,0 +1,9 @@
+Duck Typing
+- modify behavior of an object on the go
+- behavior/capabilities of object can deviate from those supplied by its class
+- In Ruby, we would use respond_to? or might simply pass an object to a method and know that an exception will be raised if it is used inappropriately.
+- In a duck-typed language, the function would take an object of any type and simply call its walk and quack methods, producing a run-time error if they are not defined.
+- Instead of specifying types formally, duck typing practices rely on documentation, clear code, and testing to ensure correct use.
+- Statically typed languages like C++ and Java make us tend to think of objects as abstract data structures that fit within a neatly defined hierarchy. In these languages, there isn’t a major distinction between an object’s class and its type, as the two concepts are tied together directly at the implementation level. 
+- This subtle shift in semantics changes virtually everything about how you need to think about designing object oriented systems
+- While duck typing is possible in many other languages, Ruby is designed from the ground up to support this style of objected oriented design. 

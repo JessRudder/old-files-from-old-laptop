@@ -1,0 +1,40 @@
+This is good for creating new hashes
+
+songs_by_artist = Hash.new{|hash,key| hash[key] = []}
+
+songs_by_artist[:a]} << "abc"
+
+#=> {a: => ['abc']}
+
+
+raise item.inspect  #Creates an error with whatever is passed to raise
+
+When you're adding an e
+
+YAGNI - You aren't going to need it => don't start adding features until they're needed
+
+Let's uptick the count!
+
+If a block of code is clearly responsible for 1 thing, it should be extracted into a separate method
+
+<html>
+  <body>
+    <p>
+      <span class="price"></span>
+    </p>
+  </body>
+</html>
+
+/html/body/p/span.price #xpath
+
+With Nokogiri it's easier to get an element out by using the CSS selectors (class, id, etc) than to use the xpath.
+
+Inject allows you to insert a value into the iterations.  On each loop, that value will be passed through to the next iterations.
+
+
+require 'open-uri'
+require 'nokogiri'
+
+(0..10).each do |i|
+  doc = Nokogiri::HTML(open('http://newyork.craigslist.org/roo/index#{i*100}.html'))
+  prices << doc.search("span.price").collect.

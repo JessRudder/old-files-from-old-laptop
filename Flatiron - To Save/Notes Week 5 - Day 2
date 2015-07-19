@@ -1,0 +1,20 @@
+Full Stack Testing
+
+describe "thing I want to do", :type => :feature :js => true do
+
+This is how you tell rspec it's a feature test not a unit test
+
+:js => true allows you to check the javascript elements of your suite too
+
+Feature tests go in a features directory
+  - should require spec_helper file
+  - still _spec files
+
+Feature specs should be expressed in terms of the user.  How things are used, not how they work (no inside variable testing)
+
+Use Rack Test to controller test your controllers
+  - mostly just test your routes.  If you want to include data in the tests, just do it in a feature test.
+
+
+
+
